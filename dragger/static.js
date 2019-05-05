@@ -1,9 +1,8 @@
-var hash = '1577f72fff1f6d70fd01';
+var hash = '44b8f079657169ec065d';
 var min = 'min.';
-var prefix = '/opstool';
 
 // 每次更新lib为防止缓存，加版本号
-requireOwnJs(prefix + '/lib/common.js?version=1.1.4');
+requireOwnJs('/lib/common.js?version=1.1.4');
 
 setTimeout(function(){
   requireOwnJs('bundle.'+ min + hash +'.js');
