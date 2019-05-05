@@ -1,4 +1,4 @@
-var hash = '6c6fd1afd0590398e0f2';
+var hash = '2bb2f2af6edac3c80a16';
 var min = 'min.';
 var prefix = '/opstool';
 
