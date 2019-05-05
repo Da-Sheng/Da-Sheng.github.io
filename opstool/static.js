@@ -7,7 +7,7 @@ requireOwnJs(prefix + '/lib/common.js?version=1.1.4');
 
 setTimeout(function(){
   requireOwnJs('bundle.'+ min + hash +'.js');
-}, 1800);
+}, 3800);
 
 function requireOwnJs(src) {
   var scriptEle = document.createElement("script");
