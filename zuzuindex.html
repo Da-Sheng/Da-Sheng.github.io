@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>租租你我他</title>
+    <meta charset="UTF-8" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .heatedloan {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 70vw;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: flex-start;
+        }
+
+        .swiper-button {
+            text-align: center;
+            font-size: 18px;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: flex-start;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="heatedloan">
+        <div class="swiper-container">
+            <a class="link" href="">
+                <div class="swiper-slide">
+                    <img style='width: 100%; height: 90%;' src='https://dc.iwish.mobi/daichao/jkfq/bgImage.png'></img>
+                </div>
+            </a>
+
+            <dic class="swiper-button">
+                <a class="link" href="">
+                    <img style='width: 100%; height: 90%;'
+                        src='https://dc.iwish.mobi/daichao/jkfq/buttonIcon.png'></img>
+                </a>
+            </dic>
+        </div>
+
+    </div>
+
+
+
+    <script type="text/javascript">
+        window.onload = function () {
+            function UrlSearch() {
+                var name, value;
+                var str = location.href; //取得整个地址栏
+                var num = str.indexOf("?")
+                str = str.substr(num + 1); //取得所有参数   stringvar.substr(start [, length ]
+
+                var arr = str.split("&"); //各个参数放到数组里
+                for (var i = 0; i < arr.length; i++) {
+                    num = arr[i].indexOf("=");
+                    if (num > 0) {
+                        name = arr[i].substring(0, num);
+                        value = arr[i].substr(num + 1);
+                        this[name] = value;
+                    }
+                }
+            }
+            var Request = new UrlSearch(); //实例化
+            // alert(Request.platform);
+            // 用原生js的方法赋值
+            var tempStr = "000";
+            if (Request.platform != null) {
+                tempStr = Request.platform
+            }
+            var aList = document.getElementsByTagName('a');
+            for (var i = 0; i < aList.length; i++) {
+                aList[i].href = "alipays://platformapi/startapp?appId=2019091767438870&page=pages/home/home&query=platform=" + tempStr;
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
