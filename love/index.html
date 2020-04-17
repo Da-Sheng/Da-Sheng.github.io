@@ -196,7 +196,8 @@
             $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);
             while (true) {
-                timeElapse(together);
+                var isDaili = window.location.search.indexOf('LiLiBaby') !== -1;
+                timeElapse(together, isDaili);
                 $await(Jscex.Async.sleep(1000));
             }
         }));
@@ -214,6 +215,7 @@
 
         runAsync().start();
     })();
+
     </script>
 
 
