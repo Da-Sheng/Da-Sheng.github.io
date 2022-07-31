@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: PingFangSC, PingFangSC-Regular;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+:root {
+    --theme-color: #1979ff;
+}
+a {
+    text-decoration: none;
+}
+/*正常的未被访问过的链接*/
+a:link {
+    text-decoration: none;
+}
+/*已经访问过的链接*/
+a:visited {
+    text-decoration: none;
+}
+/*鼠标划过(停留)的链接*/
+a:hover {
+    text-decoration: none;
+}
+/* 正在点击的链接*/
+a:active {
+    text-decoration: none;
+}
+a {
+    color: inherit;
+}
+.jump-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: PingFangSC, PingFangSC-Regular;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    *zoom:1;
+}
+.float-left {
+    float: left;
+}
+.middle-container {
+    margin: 0 auto;
+    width: 1024px;
+    height: 100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 420px;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 5px;
+}
+.swiper-pagination-bullet.my-bullet {
+    background-color: #fff9;
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.swiper-pagination-bullet-active.my-bullet-active::before {
+    background-color: #fff9;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    z-index: 0;
+    border: 3px solid #fff;
+    left: -3px;
+    top: -3px;
+}
+.fit-big-img-bg {
+    background-size: 1920px 420px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.common-bg-props {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn {
+    height: 32px;
+    padding: 4px 15px 6px;
+    min-width: 80px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #C8D5E5;
+    font-size: 16px;
+    color: #2E3033;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.btn.shine {
+    color: var(--theme-color);
+}
+.btn.primary {
+    border-color: transparent;
+    background: -webkit-linear-gradient(270deg, #6BA9FF 0%, #2B84FF 100%);
+    background: -moz- oldlinear-gradient(270deg, #6BA9FF 0%, #2B84FF 100%);
+    background: -o-linear-gradient(270deg, #6BA9FF 0%, #2B84FF 100%);
+    background: linear-gradient(180deg, #6BA9FF 0%, #2B84FF 100%);
+    color: #fff;
+}
+
+.pglist {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 38px auto;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+}
+
+.pglist li {
+    list-style-type:none;
+}
+
+.pglist li a {
+    display: block;
+    padding: 5px 11px;
+    background: #FFFFFF;
+    border: 1px solid #EBEEF2;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #2E3033;
+    text-align: center;
+}
+
+.pglist li.active a {
+    border: 1px solid #1979FF;
+    color: #1979FF;
+}
+
+.jus-space-between {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.jus-center {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}

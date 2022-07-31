@@ -1,0 +1,394 @@
+@import'./common.css';
+@import'./footer.css';
+@import'./keyframes.css';
+
+#main-product {
+    padding-top: 60px;
+    height: 690px;
+    overflow: hidden;
+}
+.product-info {
+    height: 331px;
+    width: 100%;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.product-info-title {
+    font-size: 52px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.product-info-img {
+    width: 330px;
+    margin-left: 56px;
+    height: 331px;
+}
+.product-info-down-action {
+    height: 128px;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.product-info-down-btn {
+    width: 204px;
+    height: 54px;
+    background: -webkit-linear-gradient(0deg, #57F202 0%, #4ED408 55%, #00F8D0 100%);
+    background: -moz- oldlinear-gradient(0deg, #57F202 0%, #4ED408 55%, #00F8D0 100%);
+    background: -o-linear-gradient(0deg, #57F202 0%, #4ED408 55%, #00F8D0 100%);
+    background: linear-gradient(90deg, #57F202 0%, #4ED408 55%, #00F8D0 100%);
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 600;
+    color: #FFFFFF;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+}
+.product-info-down-qrcode-container {
+    width: 128px;
+    height: 128px;
+    overflow: hidden;
+    margin-left: 33px;
+}
+.product-info-down-qrcode {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 128px;
+    height: 128px;
+    border-radius: 8px;
+}
+.product-info-down-qrcode img {
+    width: 125px;
+    height: 125px;
+}
+.product-info-img img {
+    width: 330px;
+}
+
+.product-icons {
+    height: 220px;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 80px;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+}
+
+.product-icon-container {
+    width: 238px;
+    height: 220px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #FFFFFF;
+    padding: 20px;
+    cursor: pointer;
+}
+.product-icon-container:hover .product-icon {
+    -webkit-animation: slide-fwd-center 2s infinite linear;
+       -moz-animation: slide-fwd-center 2s infinite linear;
+         -o-animation: slide-fwd-center 2s infinite linear;
+            animation: slide-fwd-center 2s infinite linear;
+}
+.product-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 4px;
+}
+.product-icon-des-title {
+    font-size: 24px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 600;
+}
+
+.product-icon img {
+    width: 100px;
+}
+
+.product-icon-des-content {
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+}
+
+#phone-booster {
+    padding: 102px;
+    overflow: hidden;
+}
+#rocket-img {
+    -webkit-transform: translateY(800px);
+       -moz-transform: translateY(800px);
+        -ms-transform: translateY(800px);
+         -o-transform: translateY(800px);
+            transform: translateY(800px);
+}
+
+#battery-saver {
+    padding: 40px;
+}
+#junk-cleaner {
+    padding: 185px;
+}
+
+.big-info-title {
+    font-size: 52px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 44px;
+    position: relative;
+    height: 92px;
+    line-height: 92px;
+    display: inline-block;
+}
+
+.green-tip-left,
+.green-tip-right {
+    position: absolute;
+    width: 92px;
+}
+.green-tip-left {
+    left: -30px;
+}
+
+.green-tip-right {
+    right: -30px;
+}
+
+.big-info-content {
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    width: 514px;
+}
+
+#tripartite-cooperation {
+    padding-top: 90px;
+    height: 690px;
+}
+.tripartite-cooperation-title {
+    text-align: center;
+    font-size: 52px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.tripartite-cooperations {
+    margin-top: 68px;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 0 72px;
+}
+.tripartite-cooperation-item {
+    margin-left: 68px;
+    width: 248px;
+    height: 100px;
+    border-radius: 4px;
+    border: 1px solid #FFFFFF;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 32px;
+}
+.tripartite-cooperation-item:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+#down-bottom {
+    height: 690px;
+    padding-top: 90px;
+    text-align: center;
+}
+.down-bottom-title {
+    font-size: 52px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.down-bottom-title2 {
+    font-size: 46px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.down-bottom-subtitle {
+    font-size: 32px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.green-title {
+    font-size: 52px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #5BFD00;
+}
+.down-bottom-container {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.down-bottom-icon-container {
+    margin-right: 32px;
+}
+.down-bottom-icon-btn {
+    width: 204px;
+    height: 54px;
+    background: -webkit-linear-gradient(0deg, #57F202 0%, #4ED408 55%, #00F8D0 100%);
+    background: -moz- oldlinear-gradient(0deg, #57F202 0%, #4ED408 55%, #00F8D0 100%);
+    background: -o-linear-gradient(0deg, #57F202 0%, #4ED408 55%, #00F8D0 100%);
+    background: linear-gradient(90deg, #57F202 0%, #4ED408 55%, #00F8D0 100%);
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 600;
+    color: #FFFFFF;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+}
+.product-info-down-qrcode-container {
+    width: 128px;
+    height: 128px;
+    overflow: hidden;
+    margin-left: 33px;
+}
+.down-bottom-icon {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 212px;
+    height: 212px;
+    border-radius: 8px;
+}
+.down-bottom-icon img {
+    width: 188px;
+    height: 188px;
+}
+#about-us {
+    height: 200px;
+    background: #0D280B;
+    padding-top: 28px;
+    color: #FFFFFF;
+}
+.about-us-title {
+    font-size: 24px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+.about-us-subtitle{
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.about-us-content {
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    margin-bottom: 8px;
+    max-width: 556px;
+}
+.about-us-label {
+    color: #869385;
+}
